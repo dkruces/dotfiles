@@ -1,0 +1,25 @@
+[user]
+	name = Daniel Gomez
+
+[init]
+	defaultBranch = main
+
+[alias]
+	br = branch
+	brc = branch --show-current
+	cias = commit --amend --signoff
+	ci = commit
+	cim = commit --message
+	cims = commit --signoff --message
+	cis = commit --signoff
+	co = checkout
+	cp = cherry-pick
+	last = log -1 HEAD
+	lg0 = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cs) %C(bold blue)%an <%ae>%Creset' --abbrev-commit
+	lg1 = log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cs) %C(bold blue)%an <%ae>%Creset' --abbrev-commit
+	list = diff-tree --no-commit-id --name-only -r
+	ri = rebase --interactive
+	st = status
+
+[include]
+	path = ~/.config/git/extra
