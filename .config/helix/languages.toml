@@ -1,0 +1,13 @@
+[[language]]
+name = "c"
+indent = { tab-width = 8, unit = "\t" }
+file-types = [ "c", "h"]
+
+[[language]]
+name = "bash"
+indent = { tab-width = 4, unit = "\t\t" }
+
+[[language]]
+name = "rust"
+indent = { tab-width = 4, unit = "    " }
+auto-format = true
