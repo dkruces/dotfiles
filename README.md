@@ -12,11 +12,28 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 ## Install Configuration Files with GNU Stow
 
-Example `helix-editor`:
+Example Helix Editor:
+
+```sh
+mkdir --parent ~/.config/helix
+```
 
 ```sh
 stow \
-  --target ~/.config/helix-editor \
+  --target ~/.config/helix \
   --dir ~/dotfiles/.config \
-  helix-editor
+  helix
+```
+
+Example Git SCM:
+
+```sh
+mkdir --parent ~/.config/git
+```
+
+```sh
+stow \
+  --target ~/.config/git \
+  --dir ~/dotfiles/.config \
+  git
 ```
