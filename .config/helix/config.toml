@@ -17,6 +17,7 @@ rulers = [80]
 cursorline = true
 color-modes = true
 insert-final-newline = true
+text-width = 72
 
 [editor.file-picker]
 hidden = false
