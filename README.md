@@ -37,3 +37,27 @@ stow \
   --dir ~/dotfiles/.config \
   git
 ```
+
+
+## Troubleshooting
+
+### ERROR: Slashes are not permitted in package names
+
+Command:
+
+```sh
+stow --target ~/.config/helix ~/src/dkruces/dotfiles/.config helix
+```
+
+Error message:
+
+```plaintext
+stow: ERROR: Slashes are not permitted in package names
+```
+
+Solution:
+
+```sh
+cd ~/src/dkruces/dotfiles/.config
+stow --target ~/.config helix
+```
