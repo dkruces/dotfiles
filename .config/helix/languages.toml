@@ -11,3 +11,7 @@ indent = { tab-width = 4, unit = "\t\t" }
 name = "rust"
 indent = { tab-width = 4, unit = "    " }
 auto-format = true
+
+[[language]]
+name = "markdown"
+text-width = 80
